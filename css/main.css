@@ -1,5 +1,32 @@
+body {
+  background: url("/img/bg-pattern.png"), repeat, linear-gradient(to right, red 0%, #663399 100%);
+  background-attachment: fixed;
+  font-family: "Mulish", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+nav {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  color: yellow;
+}
 nav.navbar {
-  background-color: yellow;
+  position: fixed;
+  width: 100%;
+}
+nav.navbar ul {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: grey;
+}
+nav.bg-white {
+  background-color: white;
+  color: grey;
+}
+nav a:hover {
+  color: white;
+}
+
+footer {
+  font-family: "Mulish", Helvetica, Arial, sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

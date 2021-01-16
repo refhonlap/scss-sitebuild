@@ -19,14 +19,14 @@
 
 <body class="">
 
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-transparent f-lato fixed-top">
+    <nav id="navbar" class="navbar">
         <a class="navbar-brand text-warning" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-text">Menu</span>
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+        <div id="mainMenu">
             <ul class="navbar-nav text-right">
                 <li class="nav-item">
                     <a class="nav-link" id="#scroll" href="#download">DOWNLOAD</a>
@@ -184,7 +184,7 @@
                     <div>
                         <p class="text-white-50">© Your Website 2018. All Rights Reserved.</p>
                     </div>
-                    <nav class="nav justify-content-center text-warning">
+                    <nav class="footer">
                         <a data-toggle="modal" data-target="#sendModal1" class="mr-2 text-white-50">Privacy</a>
                         </a>
                         <a data-toggle="modal" data-target="#sendModal2" class="mr-2 text-white-50">Terms</a>
@@ -259,14 +259,10 @@
     </div>
 
     <script>
-        $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
-            interval: 300
-        });
-
         window.onscroll = () => {
             const nav = document.querySelector('#navbar');
-            if (this.scrollY <= 10) nav.className = 'navbar navbar-expand-lg navbar-dark bg-transparent f-lato fixed-top';
-            else nav.className = 'navbar navbar-expand-lg navbar-light bg-white f-lato fixed-top';
+            if (this.scrollY <= 10) nav.className = 'navbar';
+            else nav.className = 'navbar bg-white';
         };
     </script>
 </body>
