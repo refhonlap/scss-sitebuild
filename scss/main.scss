@@ -26,6 +26,9 @@ nav {
                 color: yellow;
                 text-decoration: none;
                 padding: 14px 16px;
+            }
+            a:hover {
+                color: white;
             }    
         }
 
@@ -40,9 +43,12 @@ nav {
 
                     a {
                         display: block;
-                        color: #f2f2f2;
+                        color: lightgray;
                         padding: 14px 16px;
                         text-decoration: none;
+                    }
+                    a:hover {
+                        color: white;
                     }
                 }
             }
@@ -64,16 +70,38 @@ nav {
                     }
                 }
             }
+            
         }
-    }
-
-    a:hover {
-        color: white;
+        div {
+            a {
+                color: black;
+            }
+        }
     }
 }
 
 header {
     margin-top: 60px;
+
+    section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .media {
+            margin: 5rem;
+            h1 {
+                font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+            }
+            a {
+                font-family: 'Mulish', Helvetica, Arial, sans-serif;
+            }
+        }
+        .img-phone {
+            margin: 5rem;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 footer {
