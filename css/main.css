@@ -274,6 +274,42 @@ footer nav a:hover {
   nav button {
     display: initial;
   }
+
+  header section {
+    display: block;
+    margin: 3rem;
+  }
+  header section .media {
+    margin: 0;
+  }
+  header section .media h1 {
+    font-size: 29px;
+    line-height: 1.3;
+    margin: 6rem 0 3rem 0;
+  }
+  header section .img-phone {
+    margin: 6rem 0;
+  }
+
+  main section {
+    text-align: center;
+  }
+  main section#download div {
+    margin: 0;
+  }
+  main section#download div h1 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+  main section#download div p {
+    font-size: 1.1rem;
+  }
+  main section#download nav {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
