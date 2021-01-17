@@ -10,18 +10,61 @@ nav {
     color: yellow;
 
     &.navbar {
+        display: inline;
         position: fixed;
+        top: 0;
         width: 100%;
+        text-align: center;
+        overflow: hidden;
 
-        ul {
-            font-family: 'Lato', Helvetica, Arial, sans-serif;
-            color: grey;
+        div {
+            display: inline;
+            a {
+                display: block;
+                float: left;
+                text-align: center;
+                color: yellow;
+                text-decoration: none;
+                padding: 14px 16px;
+            }    
+        }
+
+        div {
+            ul {
+                display: inline;
+                font-family: 'Lato', Helvetica, Arial, sans-serif;
+                li {
+                    float: right;
+                    display: inline;
+                    text-align: center;
+
+                    a {
+                        display: block;
+                        color: #f2f2f2;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        button {
+            display: none;
         }
     }
 
     &.bg-white {
         background-color: white;
-        color:grey;
+        
+        div {
+            ul {
+                li {
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
     }
 
     a:hover {
@@ -29,10 +72,16 @@ nav {
     }
 }
 
+header {
+    margin-top: 60px;
+}
+
 footer {
     font-family: 'Mulish', Helvetica, Arial, sans-serif;
 }
 
 @media screen and (max-width: 992px) {
-
+    nav button {
+        display: initial;
+    }
 }
